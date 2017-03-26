@@ -78,17 +78,11 @@
                     </a>
                 </li>
                 
-                <li class="has-submenu">
-                    <a href="javascript:void(0)" class="submenu-toggle">
+                <li>
+                    <a href="{{ route('properties.manage') }}">
                         <i class="menu-icon zmdi zmdi-home zmdi-hc-lg"></i>
                         <span class="menu-text">Properties</span>
-                        <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
                     </a>
-                    
-                    <ul class="submenu">
-                        <li><a href="{{ route('properties.manage') }}"><span class="menu-text">Manage Properties</span></a></li>
-                        <li><a href="{{ route('designs.manage') }}"><span class="menu-text">Property Designs</span></a></li>  
-                    </ul>
                 </li>
                 
                 <li class="has-submenu">

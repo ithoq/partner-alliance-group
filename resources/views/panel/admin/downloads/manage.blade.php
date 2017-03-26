@@ -116,7 +116,7 @@
                     	                    @endif
                     	                </td>
                     	                
-                                        <td align="center">
+                                        <td align="center" style="white-space:nowrap;">
                                             @if($item->download_file == 'Unavailable')
                                                 <a href="#" class="btn btn-default btn-xs disabled" disabled="disabled"><i class="fa fa-times-circle"></i> Download</a>
                                             @else

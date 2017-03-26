@@ -172,6 +172,12 @@ Route::group(['namespace' => 'Panel', 'prefix' => 'panel', 'middleware' => 'auth
                 'uses' => 'PropertiesController@manage'
             ]);
             
+            # Manage
+            Route::get('create', [
+                'as' => 'properties.create',
+                'uses' => 'PropertiesController@create'
+            ]);
+            
             # Add
             Route::post('add', [
                 'as' => 'properties.add',

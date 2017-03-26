@@ -11,9 +11,26 @@ class DownloadTypesSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-        $type = new Types;
-        $type->type_name = 'Unknown Type';
-        $type->save();
+    {        
+        
+        # Seed Data
+        $seed = [
+            'Unknown Type',
+            'Colour Schemes',
+            'Facades',
+            'Forms',
+            'House Brochures',
+            'Interior Images',
+            'Other',
+        ];
+        
+        # Loop
+        foreach($seed as $item) {
+            
+            $type = new Types;
+            $type->type_name = $item;
+            $type->save();
+            
+        }
     }
 }

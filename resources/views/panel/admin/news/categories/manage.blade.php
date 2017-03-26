@@ -102,7 +102,7 @@
                 	                <td><span class="label label-default">{{ $item->id }}</span></td>
                 	                <td>{{ $item->category_name }}</td>
                 	                <td>{{ $item->category_desc }}</td>
-                                    <td align="center">
+                                    <td align="center" style="white-space:nowrap;">
                                         <a href="{{ route('news.categories.edit', ['id' => $item->id]) }}" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> Edit</a>
                                         <button type="submit" id="d{{ $item->id }}" class="btn btn-danger btn-xs confirm" name="id" value="{{ $item->id }}"><i class="fa fa-trash"></i> Delete</button>
                                     </td>

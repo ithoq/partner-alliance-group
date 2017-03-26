@@ -117,7 +117,7 @@ class EstatesController extends Controller
                 if($request->hasFile('estate_research')) $file_2->move($path, $file_2->getClientOriginalName());
                 
                 # Log
-                $this->logger->log('Added New Estate');
+                $this->logger->log('Added new '. $this->message .'.');
                 
                 # Return Success
                 return redirect()->back()->withSuccess('Successfully added new '. $this->message .'.');

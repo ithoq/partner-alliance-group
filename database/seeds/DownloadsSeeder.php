@@ -12,24 +12,8 @@ class DownloadsSeeder extends Seeder
      */
     public function run()
     {
-        # Seed Data
-        $seed = [
-            'Unknown Download',
-            'Colour Schemes',
-            'Facades',
-            'Forms',
-            'House Brochures',
-            'Interior Images',
-            'Other',
-        ];
-        
-        # Loop
-        foreach($seed as $item) {
-            
-            $download = new Downloads;
-            $download->download_name = $item;
-            $download->save();
-            
-        }
+        $download = new Downloads;
+        $download->download_name = 'Unknown Download';
+        $download->save();
     }
 }

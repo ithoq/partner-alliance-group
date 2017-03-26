@@ -20,7 +20,6 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         
         # Custom Tables
-        $this->call(DesignsSeeder::class);
         $this->call(DownloadsSeeder::class);
         $this->call(DownloadTypesSeeder::class);
         $this->call(EstatesSeeder::class);

@@ -123,7 +123,7 @@
                 	                    @endif
                 	                </td>
                 	                
-                                    <td align="center">
+                                    <td align="center" style="white-space:nowrap;">
                                         <a href="{{ route('news.edit', ['id' => $item->id]) }}" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i> Edit</a>
                                         <button type="submit" class="btn btn-danger btn-xs confirm" name="id" value="{{ $item->id }}"><i class="fa fa-trash"></i> Delete</button>
                                     </td>
